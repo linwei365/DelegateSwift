@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,SecondViewControllerDelegate {
 
     @IBOutlet weak var textLabel: UILabel!
     override func viewDidLoad() {
@@ -16,8 +16,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    func passVaule(text: String) {
+        self.textLabel.text = text
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let vc = segue.destinationViewController as! SecondViewController
+        
+        vc.delegate = self
+        
+        
         
     }
     
