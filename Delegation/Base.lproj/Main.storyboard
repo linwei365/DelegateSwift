@@ -20,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WT5-fe-Oek">
                                 <rect key="frame" x="215" y="338" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="386-iy-Hb5" kind="show" id="CCE-sp-yw7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6t-2s-gk3">
                                 <rect key="frame" x="231" y="258" width="42" height="21"/>
