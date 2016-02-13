@@ -8,9 +8,17 @@
 
 import UIKit
 
+protocol SecondViewControllerDelegate{
+    
+    func passVaule(text: String)
+}
+
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
+    
+    var delegate:SecondViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +30,8 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func onClick(sender: AnyObject) {
+        
+        
         
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         
