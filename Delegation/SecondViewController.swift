@@ -31,7 +31,7 @@ class SecondViewController: UIViewController {
     }
     @IBAction func onClick(sender: AnyObject) {
         
-        
+        self.delegate?.passVaule(textField.text!)
         
         presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
         
